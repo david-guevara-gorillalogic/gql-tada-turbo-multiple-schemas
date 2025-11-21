@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "plugins": [
+      {
+        "name": "gql.tada/ts-plugin",
+        "schemas": [
+          {
+            "name": "pokemon",
+            "schema": "./graphql/pokemon.graphql",
+            "tadaOutputLocation": "./graphql/pokemon-env.d.ts",
+            "tadaTurboLocation": "./graphql/pokemon-cache.d.ts"
+          },
+          {
+            "name": "countries",
+            "schema": "./graphql/countries.graphql",
+            "tadaOutputLocation": "./graphql/countries-env.d.ts",
+            "tadaTurboLocation": "./graphql/countries-cache.d.ts"
+          }
+        ]
+      }
+    ]
+  }
+}
